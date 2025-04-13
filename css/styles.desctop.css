@@ -1,9 +1,8 @@
-/*desctop
+/*desctop*/
 
 @media screen and (min-width: 1158px) {
-
 ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -47,87 +46,17 @@ body {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    color: #404bbf;
-}
-
-.header-item-link.current {
-    position: relative;
-    color: #404bbf;
-}
-
-.header-item-link.current::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px; 
-}
-
-.header-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.header-item-link {
-    color: #2E2F42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-    display: block;
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.header-item-link:focus,
-.header-item-link:hover {
-    color:#404bbf;
-}
-
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.address {
-    font-style: normal;
-    margin-left: auto;
-}
-
-.address-list {
+.header-nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
-}
-
-.address-item {
-    list-style: none;
-}
-
-.address-item-link {
-    color: #434455;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-style: normal;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.address-item-link:focus, 
-.address-item-link:hover {
+    position: relative;
     color: #404bbf;
 }
 
@@ -157,6 +86,82 @@ body {
     color: #F4F4FD;
 }
 
+.burger-menu {
+    color: #2f2f37;
+    border: none;
+    display: block;
+}
+
+.burger {
+    display: none;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-item-link {
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.header-item-link:focus,
+.header-item-link:hover {
+    color:#404bbf;
+}
+
+.header-item-link.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.header-item-link.current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px; 
+}
+
+.address {
+    font-style: normal;
+    margin-left: auto;
+}
+
+.address-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.address-item-link {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.address-item-link:focus, 
+.address-item-link:hover {
+    color: #404bbf;
+}
+
 .hero-section {
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg.jpg);
@@ -176,7 +181,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     max-width: 496px;
-    margin: 0 auto 56px;
+    margin: 0 auto 48px;
     text-align: center;
 }
 
@@ -185,7 +190,7 @@ body {
     background-color: #4D5AE5;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
     border-radius: 4px;
@@ -260,6 +265,11 @@ body {
     color: #434455;
 }
 
+.our-team {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+
 .second-title {
     font-weight: 700;
     font-size: 36px;
@@ -269,11 +279,6 @@ body {
     text-transform: capitalize;
     color: #2e2f42;
     margin: 0 auto 72px;
-}
-
-.our-team {
-    background-color: #F4F4FD;
-    padding: 120px 0;
 }
 
 .team-title {
@@ -510,8 +515,6 @@ body {
     display: flex;
     gap: 24px;
 }
-
-.subscription-label {}
 
 .subscription-input {
     width: 264px;
