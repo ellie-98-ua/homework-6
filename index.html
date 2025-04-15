@@ -11,7 +11,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="css/styles.tablet.css" media="screen and (min-width: 768px) and (max-width: 1157px)">
+    <link rel="stylesheet" href="css/styles-desktop.css" media="screen and (min-width: 1158px)">
+
+
 </head>
 
 <body>
@@ -461,7 +465,13 @@
     </div>
 
     <div class="backdrop-menu">
-        <div class="mobile-menu"></div>
+        <div class="mobile-menu">
+            <button type="button" class="close-btn">
+                <svg class="modal-close-btn" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+        </div>
     </div>
 </div>
 </body>
