@@ -58,20 +58,46 @@ body {
     color: #404bbf;
 }
 
-.header-item-link.current {
-    position: relative;
-    color: #404bbf;
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header-item-link.current::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px; 
+.logo-header {
+    margin-right: 76px;
+}
+
+.logo-part-one {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    padding: 1.5px 0;
+}
+
+.logo-part-two {
+    font-family: "Raleway", sans-serif;
+    color: #2E2F42;
+}
+
+.logo-part-three {
+    font-family: "Raleway", sans-serif;
+    color: #F4F4FD;
+}
+
+.burger-menu {
+    color: #2f2f37;
+    border: none;
+    display: block;
+}
+
+.burger {
+    display: none;
 }
 
 .header-list {
@@ -97,10 +123,20 @@ body {
     color:#404bbf;
 }
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-item-link.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.header-item-link.current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px; 
 }
 
 .address {
@@ -128,32 +164,6 @@ body {
 .address-item-link:focus, 
 .address-item-link:hover {
     color: #404bbf;
-}
-
-.logo-header {
-    margin-right: 76px;
-}
-
-.logo-part-one {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4D5AE5;
-    padding: 1.5px 0;
-}
-
-.logo-part-two {
-    font-family: "Raleway", sans-serif;
-    color: #2E2F42;
-}
-
-.logo-part-three {
-    font-family: "Raleway", sans-serif;
-    color: #F4F4FD;
 }
 
 .hero-section {
@@ -224,8 +234,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: column;
-    gap: 8px;
+    gap: 24px;
 }
 
 .features-item {
