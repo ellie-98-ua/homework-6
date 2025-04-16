@@ -170,13 +170,19 @@
 
     .hero-section {
         background-color: #2E2F42;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         max-width: 768px;
         padding: 112px 0 112px;
         margin: 0 auto;
+    }
+
+    @media screen and (min-resolution: 2x) {
+        .hero-section {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg-2x.jpg);
+        }
     }
 
     .hero-title {

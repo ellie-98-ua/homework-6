@@ -55,6 +55,7 @@ body {
 
 .header .container {
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
 }
@@ -96,14 +97,14 @@ body {
 .burger-menu {
     color: #2f2f37;
     border: none;
-    display: block;
+    /*display: block;*/
 }
 
 .burger {
     display: block;
 }
 
-.header-item-link.current {
+/* .header-item-link.current {
     position: relative;
     color: #404bbf;
 }
@@ -117,13 +118,12 @@ body {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px; 
-}
+}*/
 
 .header-list {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 40px;
-    display: none;
 }
 
 .header-item-link {
@@ -173,13 +173,19 @@ body {
 /*hero*/
 .hero-section {
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 320px;
     padding: 72px 0 72px;
     margin: 0 auto;
+}
+
+@media screen and (min-resolution: 2x) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobile-bg-2x.jpg);
+    }
 }
 
 .hero-title {
@@ -237,9 +243,8 @@ body {
 
 .features-list {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .icon-list {

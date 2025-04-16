@@ -177,6 +177,12 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (min-resolution: 2x) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/desctop-bg-2x.jpg);
+    }
+}
+
 .hero-title {
     color: #FFF;
     font-size: 56px;
