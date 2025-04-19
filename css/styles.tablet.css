@@ -479,10 +479,26 @@
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
-        max-width: 736px;
-        align-items: baseline;
+        max-width: 552px;
+        justify-content: center;
+        align-items: flex-start;
         margin: 0 auto;
     }
+
+    /* .logo-paragraph {
+        flex-basis: 264px;
+        flex-shrink: 0;
+    }
+    
+    .social-media {
+        flex-basis: 208px;
+        flex-shrink: 0;
+    }
+    
+    .subscription {
+        flex-basis: 100%;
+        max-width: 453px;
+    } */
 
     .footer-title {
         font-weight: 500;

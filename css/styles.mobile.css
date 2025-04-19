@@ -63,7 +63,6 @@ body {
 .mobile-burger-logo {
     display: flex;
     flex-direction: row;
-    gap: 169px;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
@@ -237,6 +236,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 72px;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-title {
@@ -260,12 +261,14 @@ body {
 }
 
 .team-item {
+    min-width: 264px;
     border-radius: 0px 0px 4px 4px;
     background-color: #fff;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-content {
+    background-color: #fff;
     padding: 32px 0;
 }
 
